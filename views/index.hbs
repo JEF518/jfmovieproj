@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Home</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <container>
+        <div class="menu-button">
+            <a href="/genres"><img src='/menu.png' style="width: 80%" /></a>
+        </div>
+        <h1>Movies</h1>
+        {{#each data}}
+        <a class="movie-div" href="/film/title/{{this.Title}}/year/{{this.Year}}" />
+        <div class="movie-title">
+            <h2>{{this.Title}}</h2>
+        </div> <br>
+        <img src={{this.Poster}} /><br>
+        {{this.Plot}} <br>
+        {{this.Year}} <br>
+        IMDB Rating: {{this.imdbRating}} <br>
+        Awards: {{this.Awards}} <br>
+        </a>
+        {{/each}}
+    </container>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

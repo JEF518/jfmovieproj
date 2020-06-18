@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+  background-color: black;
+  color: whitesmoke;
+
+}
+
+container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 5%;
+}
+
+container>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.movie-div {
+  flex: 1;
+  max-width: 600px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.movie-title {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5px;
+}
+
+.genre-div {
+    color: whitesmoke;
+    text-decoration: none;
+    flex: 1 0 21%;
+    /* explanation below */
+    margin: 5px;
+    height: 100px;
+    background-color: darkslategray;
+    /* no underline */
+}
+
+.menu-button {
+    align-self: flex-start;
+    left: 0;
+    /* new */
+    top: 0;
+    /* new */
+    position: fixed;
+    max-width: 50px;
+}
+
+table {
+  width: 100%;
+  background-color:#282828;
+  border-radius: 5px;
+}
+
+th {
+  height: 0px;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+.imdb-div{
+  background-color: darkgoldenrod;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}

@@ -1,0 +1,114 @@
+{ movies: [ '{
+            "Title": "Outrageous Fortune",
+            "Year": "1987",
+            "Rated": "R",
+            "Released": "30 Jan 1987",
+            "Runtime": "99 min",
+            "Genre": "Comedy",
+            "Director": "Arthur Hiller",
+            "Writer": "Leslie Dixon",
+            "Actors": "Shelley Long, Bette Midler, Peter Coyote, Robert Prosky",
+            "Plot": "Two women unknowingly share the same man, but when he disappears, both go out looking for him and enter his surprisingly dangerous life.",
+            "Language": "English, Russian",
+            "Country": "USA",
+            "Awards": "Nominated for 1 Golden Globe. Another 2 wins.",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNGRhZjA3YzEtZTU2Mi00NWRlLTljZTEtMDE2MTljZGFkMGM4XkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.2/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "50%"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "6.2",
+            "imdbVotes": "7,059",
+            "imdbID": "tt0093690",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        }',
+      '{
+            "Title":"April Fool\'s Day",
+            "Year": "1986",
+            "Rated": "R",
+            "Released": "28 Mar 1986",
+            "Runtime": "89 min",
+            "Genre": "Horror, Mystery",
+            "Director": "Fred Walton",
+            "Writer": "Danilo Bach",
+            "Actors": "Jay Baker, Pat Barlow, Lloyd Berry, Deborah Foreman",
+            "Plot":"Nine college students staying at a friend\'s remote island mansion begin to fall victim to an unseen murderer over the April Fool\'s Day weekend.",
+            "Language": "English",
+            "Country": "USA, Canada",
+            "Awards": "N/A",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYjI5ODIxYjktMGU3Ny00MmZmLWIyYzUtMmQ0ZjIzNzUwNWVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.2/10"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "49/100"
+                }
+            ],
+            "Metascore": "49",
+            "imdbRating": "6.2",
+            "imdbVotes": "13,138",
+            "imdbID": "tt0090655",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        }',
+      '{
+            "Title": "25th Hour",
+            "Year": "2002",
+            "Rated": "R",
+            "Released": "10 Jan 2003",
+            "Runtime": "135 min",
+            "Genre": "Drama",
+            "Director": "Spike Lee",
+            "Writer": "David Benioff (novel), David Benioff (screenplay)",
+            "Actors": "Edward Norton, Philip Seymour Hoffman, Barry Pepper, Rosario Dawson",
+            "Plot": "Cornered by the DEA, convicted New York drug dealer Montgomery Brogan reevaluates his life in the 24 remaining hours before facing a seven-year jail term.",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "Nominated for 1 Golden Globe. Another 4 wins & 15 nominations.",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNmE0YjdlYTktMTU4Ni00Mjk2LWI3NWMtM2RjNmFiOTk4YjYxL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.6/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "78%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "67/100"
+                }
+            ],
+            "Metascore": "67",
+            "imdbRating": "7.6",
+            "imdbVotes": "166,545",
+            "imdbID": "tt0307901",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        }'
+    ]
+}

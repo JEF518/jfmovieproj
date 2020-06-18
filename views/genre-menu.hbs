@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Genre Menu</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+</head>
+
+<body>
+    <container>
+        <div class="menu-button">
+            <a href="/films"><img src='/home.png' style="width: 80%" /></a>
+        </div>
+        {{#each data.genres}}
+        <a class="genre-div" href="/genre/{{this.genre}}">
+            {{!-- <div class="genre-div"> --}}
+            <h1>{{this.genre}}</h1>
+            {{!-- </div> --}}
+        </a>
+        {{/each}}
+    </container>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

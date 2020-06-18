@@ -1,0 +1,22 @@
+{
+    "movies": [
+        {
+            "title": "25th Hour",
+            "year": "2002",
+            "category": "modern-thriller",
+            "watched": false
+        },
+        {
+            "title": "Outrageous Fortune",
+            "year": "1987",
+            "category": "comedies",
+            "watched": false
+        },
+        {
+            "title": "April Fool's Day",
+            "year": "1986",
+            "category": "old-horror",
+            "watched": false
+        }
+    ]
+}
