@@ -1,7 +1,7 @@
 const axios = require('axios');
 var mcache = require('memory-cache');
 var fs = require('fs');
-const dataPath = "./movies.json";
+const dataPath = "./data/real-data/movies.json";
 require('dotenv').config();
 
 
@@ -26,6 +26,10 @@ const filmRoutes = (app, fs) => {
             }
         }
     }
+    app.get("/", (req, res) => {
+        res.render("home");
+    });
+
     // READ
     app.get("/films", cache(10000), (req, res) => {
         fs.readFile(dataPath, "utf8", (err, data) => {
@@ -118,7 +122,7 @@ const filmRoutes = (app, fs) => {
     // READ SINGLE FILM TRAILER 
     app.get('/filmtrailer/:title/:year', (req, res) => {
         let title = req.params.title;
-        let year = req.params.year
+        let year = req.params.year;
         axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + title + year + "&type=video&key=" + process.env.TRAILER_DATA_KEY
         ).then(response => {
             const trailerData = '{"trailer" : "' + response.data.items[0].id.videoId + '"}';

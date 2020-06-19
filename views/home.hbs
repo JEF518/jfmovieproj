@@ -16,15 +16,18 @@
 <body>
     <container>
         <div class="menu-button">
-            <a href="/"><img src='/home.png' style="width: 80%" /></a>
+            <a href="/films"><img src='/home.png' style="width: 80%" /></a>
         </div>
-        {{#each data.genres}}
-        <a class="genre-div" href="/genre/{{this.genre}}">
+        <a class="genre-div" href="/films">
             {{!-- <div class="genre-div"> --}}
-            <h1>{{this.genre}}</h1>
+            <h1>All Films</h1>
             {{!-- </div> --}}
         </a>
-        {{/each}}
+        <a class="genre-div" href="/genres">
+            {{!-- <div class="genre-div"> --}}
+            <h1>Genres</h1>
+            {{!-- </div> --}}
+        </a>
     </container>
     <script src="js/scripts.js"></script>
 </body>

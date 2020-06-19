@@ -749,6 +749,24 @@
             "year": "2016",
             "category": "modern-thriller",
             "watched": false
+        },
+        {
+            "title": "Source Code",
+            "year": "2011",
+            "category": "sci-fi-supernatural",
+            "watched": false
+        },
+        {
+            "title": "Hunt for the Wilderpeople",
+            "year": "2016",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "Glengarry Glen Ross",
+            "year": "1992",
+            "category": "critically-acclaimed",
+            "watched": false
         }
     ]
 }
