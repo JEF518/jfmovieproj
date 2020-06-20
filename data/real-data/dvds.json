@@ -1,0 +1,112 @@
+{
+    "movies": [
+        {
+            "title": "Smoke",
+            "year": "1995",
+            "category": "cult",
+            "watched": false
+        },
+        {
+            "title": "Moonstruck",
+            "year": "1987",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "Tea With Mussolini",
+            "year": "1999",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "Jumpin Jack Flash",
+            "year": "1986",
+            "category": "old-thriller",
+            "watched": false
+        },
+        {
+            "title": "One Flew Over The Cuckoo's Nest",
+            "year": "1975",
+            "category": "critically-acclaimed",
+            "watched": false
+        },
+        {
+            "title": "Metropolis",
+            "year": "1927",
+            "category": "critically-acclaimed",
+            "watched": false
+        },
+        {
+            "title": "Crash",
+            "year": "2004",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "The Prime of Miss Jean Brodie",
+            "year": "1969",
+            "category": "critically-acclaimed",
+            "watched": false
+        },
+        {
+            "title": "Thelma & Louise",
+            "year": "1991",
+            "category": "cult",
+            "watched": false
+        },
+        {
+            "title": "American Gangster",
+            "year": "2007",
+            "category": "modern-thriller",
+            "watched": false
+        },
+        {
+            "title": "Tyrannosaur",
+            "year": "2011",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "The Straight Story",
+            "year": "1999",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "The Craft",
+            "year": "1996",
+            "category": "cult",
+            "watched": false
+        },
+        {
+            "title": "The Stepford Wives",
+            "year": "1975",
+            "category": "cult",
+            "watched": false
+        },
+        {
+            "title": "Shirley Valentine",
+            "year": "1989",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "Teenage Mutant Ninja Turtles",
+            "year": "2014",
+            "category": "sci-fi-supernatural",
+            "watched": false
+        },
+        {
+            "title": "Fear and Loathing in Las Vegas",
+            "year": "1998",
+            "category": "cult",
+            "watched": false
+        },
+        {
+            "title": "Vicky Cristina Barcelona",
+            "year": "2008",
+            "category": "drama",
+            "watched": false
+        }
+    ]
+}

@@ -2,8 +2,9 @@ const axios = require('axios');
 var mcache = require('memory-cache');
 var fs = require('fs');
 const dataPath = "./data/real-data/movies.json";
+const dvdPath = './data/real-data/dvds.json';
 require('dotenv').config();
-
+var accents = require('remove-accents');
 
 const filmRoutes = (app, fs) => {
     // variables
@@ -81,6 +82,7 @@ const filmRoutes = (app, fs) => {
             var films = JSON.parse(data);
             for (let i = 0; i < films.movies.length; i++) {
                 if (films.movies[i].category == requestedGenre) {
+                    console.log(films.movies[i]);
                     oneGenreFilms.push(films.movies[i]);
                 }
             };
@@ -92,10 +94,12 @@ const filmRoutes = (app, fs) => {
     app.get('/film/title/:title/year/:year/:plot?', cache(10000), (req, res) => {
         console.log(req.params.year);
         if (req.params.year != null) {
-            var queryString = req.params.title + "&y=" + req.params.year;
+            var queryString = accents.remove(req.params.title.split("&").join("%20%26%20")) + "&y=" + req.params.year;
+            console.log(queryString);
         }
         else {
-            var queryString = req.params.title;
+            var queryString = accents.remove(req.params.title.split("&").join("%20%26%20"));
+            console.log(queryString);
         }
         axios.get("http://www.omdbapi.com/?apikey=" + process.env.MOVIE_DATA_KEY + "&t=" + queryString + "&plot=" + req.params.plot)
             .then(response => {
@@ -103,7 +107,7 @@ const filmRoutes = (app, fs) => {
                 let filmData = response.data;
                 console.log('title:', req.params.title);
                 console.log('year: ', req.params.year);
-                const googleReq = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + req.params.title + req.params.year + "trailer&type=video&key=" + process.env.TRAILER_DATA_KEY;
+                const googleReq = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + req.params.title.split("&").join("%20%26%20") + req.params.year + "trailer&type=video&key=" + process.env.TRAILER_DATA_KEY;
                 console.log(googleReq);
                 axios.get(googleReq
                 ).then(response => {
@@ -134,13 +138,63 @@ const filmRoutes = (app, fs) => {
                 console.log(error);
             });
     });
+
+    // READ
+    app.get("/films", cache(10000), (req, res) => {
+        fs.readFile(dataPath, "utf8", (err, data) => {
+            if (err) {
+                throw err;
+            }
+            var films = JSON.parse(data);
+            var responseData = [];
+            for (let i = 0; i < films.movies.length; i++) {
+                axios.get("http://www.omdbapi.com/?apikey=" + process.env.MOVIE_DATA_KEY + "&t=" + films.movies[i].title + "&y=" + films.movies[i].year)
+                    .then(response => {
+                        console.log("GETTING SOME SWEET SWEET DATA");
+                        //    console.log(response.data);
+                        responseData.push(response.data);
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+            };
+
+            return setTimeout(() => { renderThis('index', responseData, res) }, 1000);
+        });
+    });
+    // READ DVD FILMS
+    app.get("/dvds/films", cache(10000), (req, res) => {
+        fs.readFile(dvdPath, "utf8", (err, data) => {
+            if (err) {
+                throw err;
+            }
+            var films = JSON.parse(data);
+            var responseData = [];
+            for (let i = 0; i < films.movies.length; i++) {
+                axios.get("http://www.omdbapi.com/?apikey=" + process.env.MOVIE_DATA_KEY + "&t=" + films.movies[i].title + "&y=" + films.movies[i].year)
+                    .then(response => {
+                        console.log("GETTING SOME SWEET SWEET DATA");
+                        //    console.log(response.data);
+                        responseData.push(response.data);
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+            };
+
+            return setTimeout(() => { renderThis('index', responseData, res) }, 1000);
+        });
+    });
 };
 function getAPIData(genre, basicFilmList, res) {
     var responseData = [];
     for (let i = 0; i < basicFilmList.movies.length; i++) {
-        axios.get("http://www.omdbapi.com/?apikey=" + process.env.MOVIE_DATA_KEY + "&t=" + basicFilmList.movies[i].title + "&y=" + basicFilmList.movies[i].year)
+        console.log(basicFilmList.movies[i].title);
+        axios.get("http://www.omdbapi.com/?apikey=" + process.env.MOVIE_DATA_KEY + "&t=" + basicFilmList.movies[i].title.split("&").join("%20%26%20") + "&y=" + basicFilmList.movies[i].year)
             .then(response => {
+                console.log("http://www.omdbapi.com/?apikey=" + process.env.MOVIE_DATA_KEY + "&t=" + encodeURI(basicFilmList.movies[i].title) + "&y=" + basicFilmList.movies[i].year);
                 console.log("GETTING SOME SWEET SWEET DATA");
+                console.log(response.data);
                 responseData.push(response.data);
             })
             .catch(error => {

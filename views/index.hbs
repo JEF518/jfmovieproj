@@ -20,10 +20,13 @@
 
 <body>
     <container>
+        <div class="menu-button" style="z-index: 99;">
+            <a href="/"><img src='/home.png' style="width: 80%" /></a>
+        </div><br>
         <div class="menu-button">
-            <a href="/genres"><img src='/menu.png' style="width: 80%" /></a>
+            <a href="/genres"><img src='/menu.png' style="padding-top: 50px; width: 80%" /></a>
         </div>
-        <h1>Movies</h1>
+        <h1>All Films</h1>
         {{#each data}}
         <a class="movie-div" href="/film/title/{{this.Title}}/year/{{this.Year}}" />
         <div class="movie-title">
@@ -32,8 +35,11 @@
         <img src={{this.Poster}} /><br>
         {{this.Plot}} <br>
         {{this.Year}} <br>
-        IMDB Rating: {{this.imdbRating}} <br>
-        Awards: {{this.Awards}} <br>
+        <div class="imdb-div">
+            {{!-- <a href="imdb.com/title/{{this.imdbID}}"> --}}
+            IMDB Rating: {{this.imdbRating}} <br>
+            {{!-- </a> --}}
+        </div> Awards: {{this.Awards}} <br>
         </a>
         {{/each}}
     </container>
