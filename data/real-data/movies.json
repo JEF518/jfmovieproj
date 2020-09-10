@@ -43,12 +43,6 @@
             "watched": false
         },
         {
-            "title": "Sneakers",
-            "year": "1992",
-            "category": "old-thriller",
-            "watched": false
-        },
-        {
             "title": "The Boondock Saints",
             "year": "1999",
             "category": "old-thriller",
@@ -135,12 +129,6 @@
         {
             "title": "Outrageous Fortune",
             "year": "1987",
-            "category": "comedies",
-            "watched": false
-        },
-        {
-            "title": "Murder By Death",
-            "year": "1976",
             "category": "comedies",
             "watched": false
         },
@@ -585,25 +573,19 @@
         {
             "title": "Dressed to Kill",
             "year": "1980",
-            "category": "erotic-thriller",
+            "category": "old-thriller",
             "watched": false
         },
         {
             "title": "Eyes Wide Shut",
             "year": "1999",
-            "category": "erotic-thriller",
+            "category": "old-thriller",
             "watched": false
         },
         {
             "title": "Indecent Proposal",
             "year": "1993",
-            "category": "erotic-thriller",
-            "watched": false
-        },
-        {
-            "title": "Amadeus",
-            "year": "1984",
-            "category": "historical",
+            "category": "old-thriller",
             "watched": false
         },
         {
@@ -751,18 +733,6 @@
             "watched": false
         },
         {
-            "title": "Source Code",
-            "year": "2011",
-            "category": "sci-fi-supernatural",
-            "watched": false
-        },
-        {
-            "title": "Hunt for the Wilderpeople",
-            "year": "2016",
-            "category": "drama",
-            "watched": false
-        },
-        {
             "title": "Glengarry Glen Ross",
             "year": "1992",
             "category": "critically-acclaimed",
@@ -862,6 +832,36 @@
             "title": "Scrooged",
             "year": "1988",
             "category": "christmas",
+            "watched": false
+        },
+        {
+            "title": "Troop Zero",
+            "year": "2019",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "The King of Comedy",
+            "year": "1982",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "The Abyss",
+            "year": "1989",
+            "category": "sci-fi-supernatural",
+            "watched": false
+        },
+        {
+            "title": "The Savages",
+            "year": "2007",
+            "category": "drama",
+            "watched": false
+        },
+        {
+            "title": "The Hidden",
+            "year": "1987",
+            "category": "sci-fi-supernatural",
             "watched": false
         }
     ]

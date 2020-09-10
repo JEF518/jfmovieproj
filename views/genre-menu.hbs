@@ -20,13 +20,31 @@
         <div class="menu-button">
             <a href="/"><img src='/home.png' style="width: 80%" /></a>
         </div>
+        {{#if data.watched}}
+        <h1>
+            <u> Watched </u>
+        </h1>
         {{#each data.genres}}
-        <a class="genre-div" href="/genre/{{this.genre}}">
+        <a class="genre-div dark-mode" href="/watched/genre/{{this.genre}}">
             {{!-- <div class="genre-div"> --}}
             <h1>{{this.genre}}</h1>
             {{!-- </div> --}}
         </a>
         {{/each}}
+
+        {{else}}
+        {{#each data.genres}}
+
+        <a class="genre-div" href="genre/{{this.genre}}">
+            {{!-- <div class="genre-div"> --}}
+            <h1>{{this.genre}}</h1>
+            {{!-- </div> --}}
+        </a>
+        {{/each}}
+
+        {{/if}}
+
+
     </container>
     <script src="js/scripts.js"></script>
 </body>

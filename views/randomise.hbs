@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Randomise</title>
+    <meta name="description" content="Movie Site">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <container>
+        <div class="menu-button" style="z-index: 99;">
+            <a href="/"><img src='/home.png' style="width: 80%" /></a>
+        </div><br>
+        <div class="menu-button">
+            <a href="/genres"><img src='/menu.png' style="padding-top: 50px; width: 80%" /></a>
+        </div>
+        <h1>Randomise</h1>
+        {{#if watched}}
+        <form action="/watched/random-movie-submit">
+            {{else}}
+            <form action="/random-movie-submit">
+                {{/if}}
+                <label for="genre">Genre :</label><br>
+                <select id="genre" name="genre">
+                    <option value="comedies">comedies</option>
+                    <option value="old-thriller">old-thriller</option>
+                    <option value="modern-thriller">modern-thriller</option>
+                    <option value="critically-acclaimed">critically-acclaimed</option>
+                    <option value="carpenter">carpenter</option>
+                    <option value="old-horror">old-horror</option>
+                    <option value="drama">drama</option>
+                    <option value="cult">cult</option>
+                    <option value="historical">historical</option>
+                    <option value="sci-fi-supernatural">sci-fi-supernatural</option>
+                    <option value="recent">recent</option>
+                    <option value="documentaries">documentaries</option>
+                    <option value="christmas">christmas</option>
+
+
+                </select><br>
+                <input class="submit-button" type="submit" value="Submit Genre">
+            </form>
+            or
+            {{#if watched}}
+            <form action="/watched/random">
+                {{else}}
+                <form action="/random">
+                    {{/if}}
+                    <input class="submit-button" type="submit" value="Any Genre">
+
+                </form>
+    </container>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

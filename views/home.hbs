@@ -16,18 +16,48 @@
 </head>
 
 <body>
+
+    <div class="watched-toggle">
+        <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider round"></span>
+        </label>
+    </div>
     <container id="home-container">
         <div class="menu-button">
             <a href="/films"><img src='/home.png' style="width: 80%" /></a>
         </div>
-        <a class="home-div" href="/genres">
+        <a class="menu-item home-div" id="genre-item" href="/genres">
             <h1>Genres</h1>
         </a>
-        <a class="home-div" href="/films">
+        <a class="menu-item home-div" id="allfilms-item" href="/films">
             <h1>All Films</h1>
+        </a>
+        <br>
+        <a class="randomise-div" id="randomise-link" href="/randomise" style="min-height:100px">
+            <img id="random" class="normal" width="20%" style="align-self: center; max-width: 20%"
+                src="/images/random.svg" />
         </a>
     </container>
     <script src="js/scripts.js"></script>
+    <script>
+        function myFunction() {
+            var elements = document.getElementsByClassName('menu-item');
+            elements[0].classList.toggle("dark-mode");
+            elements[1].classList.toggle("dark-mode");
+            var randomImage = document.getElementById('random');
+            if (randomImage.classList.contains("normal")) {
+                randomImage.classList.remove("normal");
+                randomImage.src = "/images/random-white.svg";
+            } else {
+                randomImage.classList.add("normal");
+                randomImage.src = "/images/random.svg";
+            }
+            document.getElementById("genre-item").setAttribute("href", "/watched/genres");
+            document.getElementById("allfilms-item").setAttribute("href", "/watched/films");
+            document.getElementById("randomise-link").setAttribute("href", "/watched/randomise");
+        }
+    </script>
 </body>
 
 </html>

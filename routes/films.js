@@ -162,6 +162,7 @@ const filmRoutes = (app, fs) => {
             return setTimeout(() => { renderThis('index', responseData, res) }, 1000);
         });
     });
+
     // READ DVD FILMS
     app.get("/dvds/films", cache(10000), (req, res) => {
         fs.readFile(dvdPath, "utf8", (err, data) => {
