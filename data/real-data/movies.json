@@ -85,12 +85,6 @@
             "watched": false
         },
         {
-            "title": "The Town",
-            "year": "2010",
-            "category": "modern-thriller",
-            "watched": false
-        },
-        {
             "title": "Don't Say a Word",
             "year": "2001",
             "category": "modern-thriller",
@@ -201,12 +195,6 @@
         {
             "title": "Murder on the Orient Express",
             "year": "1974",
-            "category": "critically-acclaimed",
-            "watched": false
-        },
-        {
-            "title": "My Dinner With Andre",
-            "year": "1981",
             "category": "critically-acclaimed",
             "watched": false
         },
@@ -631,12 +619,6 @@
             "watched": false
         },
         {
-            "title": "Total Recall",
-            "year": "1990",
-            "category": "sci-fi-supernatural",
-            "watched": false
-        },
-        {
             "title": "Under The Skin",
             "year": "2013",
             "category": "sci-fi-supernatural",
@@ -724,12 +706,6 @@
             "title": "A Most Violent Year",
             "year": "2014",
             "category": "drama",
-            "watched": false
-        },
-        {
-            "title": "Hell or High Water",
-            "year": "2016",
-            "category": "modern-thriller",
             "watched": false
         },
         {

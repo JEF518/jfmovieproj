@@ -617,6 +617,30 @@
             "year": "1994",
             "category": "drama",
             "watched": true
-        }
+        },
+        {
+            "title": "Hell or High Water",
+            "year": "2016",
+            "category": "modern-thriller",
+            "watched": false
+        },
+        {
+            "title": "Total Recall",
+            "year": "1990",
+            "category": "sci-fi-supernatural",
+            "watched": false
+        },
+        {
+            "title": "My Dinner With Andre",
+            "year": "1981",
+            "category": "critically-acclaimed",
+            "watched": false
+        },
+        {
+            "title": "The Town",
+            "year": "2010",
+            "category": "modern-thriller",
+            "watched": false
+        },
     ]
 }
