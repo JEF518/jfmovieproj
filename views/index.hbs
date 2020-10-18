@@ -41,6 +41,10 @@
             {{!-- </a> --}}
         </div> Awards: {{this.Awards}} <br>
         </a>
+        <div class="crud-menu">
+            <a href="/delete-film-screen/title/{{this.title}}/year/{{this.year}}">Delete</a>
+            <a href="/edit-film-screen/title/{{this.title}}/year/{{this.year}}">Edit</a>
+        </div>
         {{/each}}
     </container>
     <script src="js/scripts.js"></script>
