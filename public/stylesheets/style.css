@@ -301,7 +301,7 @@ input:checked + .slider:before {
   font-family: "Courier New", Courier, monospace;
   color: greenyellow;
   text-align: center;
-  transform: rotate(-5deg);
+  transform: rotate(-3deg);
   border: dashed greenyellow;
   border-radius: 11px;
 }
