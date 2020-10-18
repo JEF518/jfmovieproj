@@ -1,646 +1,676 @@
 {
-    "movies": [
-        {
-            "title": "Conspiracy Theory",
-            "year": "1997",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "First Blood",
-            "year": "1982",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "Point Break",
-            "year": "1991",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "Sneakers",
-            "year": "1992",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "Speed",
-            "year": "1994",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "Terminator 2",
-            "year": "1991",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "The Devil's Advocate",
-            "year": "1997",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "The Fugitive",
-            "year": "1993",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "The Terminator",
-            "year": "1984",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "True Lies",
-            "year": "1994",
-            "category": "old-thriller",
-            "watched": true
-        },
-        {
-            "title": "The Burbs",
-            "year": "1989",
-            "category": "old-horror",
-            "watched": true
-        },
-        {
-            "title": "The Frighteners",
-            "year": "1996",
-            "category": "old-horror",
-            "watched": true
-        },
-        {
-            "title": "Burn After Reading",
-            "year": "2008",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Identity",
-            "year": "2003",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Inside Man",
-            "year": "2006",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Knives Out",
-            "year": "2019",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Lucky Number Slevin",
-            "year": "2006",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Nightcrawler",
-            "year": "2014",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "No Country for Old Men",
-            "year": "2007",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "The Day After Tomorrow",
-            "year": "2004",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Widows",
-            "year": "2018",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Zodiac",
-            "year": "2007",
-            "category": "modern-thriller",
-            "watched": true
-        },
-        {
-            "title": "Anchorman",
-            "year": "2004",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Booksmart",
-            "year": "2019",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Calendar Girls",
-            "year": "2003",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Chicken Run",
-            "year": "2000",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Coneheads",
-            "year": "1993",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Identity Thief",
-            "year": "2013",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Jumanji",
-            "year": "1995",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Life of the Party",
-            "year": "2018",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Matilda",
-            "year": "1996",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Mrs Doubtfire",
-            "year": "1993",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Murder by Death",
-            "year": "1976",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Romancing the Stone",
-            "year": "1984",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Serial Mom",
-            "year": "1994",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Shaun the Sheep Movie",
-            "year": "2015",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Sightseers",
-            "year": "2012",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Spy",
-            "year": "2015",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Tammy",
-            "year": "2014",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "The Boss",
-            "year": "2016",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "The Happytime Murders",
-            "year": "2018",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "The Heat",
-            "year": "2013",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "The House",
-            "year": "2017",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "The Mask",
-            "year": "1994",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "The Princess Diaries",
-            "year": "2001",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "The Spy Who Dumped Me",
-            "year": "2018",
-            "category": "comedies",
-            "watched": true
-        },
-        {
-            "title": "Amadeus",
-            "year": "1984",
-            "category": "critically-acclaimed",
-            "watched": true
-        },
-        {
-            "title": "Dr Strangelove",
-            "year": "1964",
-            "category": "critically-acclaimed",
-            "watched": true
-        },
-        {
-            "title": "Jaws",
-            "year": "1975",
-            "category": "critically-acclaimed",
-            "watched": true
-        },
-        {
-            "title": "Jerry Maguire",
-            "year": "1996",
-            "category": "critically-acclaimed",
-            "watched": true
-        },
-        {
-            "title": "The Discreet Charm of the Bourgeoisie",
-            "year": "1972",
-            "category": "critically-acclaimed",
-            "watched": true
-        },
-        {
-            "title": "The Pink Panther",
-            "year": "1963",
-            "category": "critically-acclaimed",
-            "watched": true
-        },
-        {
-            "title": "Christine",
-            "year": "1983",
-            "category": "carpenter",
-            "watched": true
-        },
-        {
-            "title": "Escape From New York",
-            "year": "1981",
-            "category": "carpenter",
-            "watched": true
-        },
-        {
-            "title": "Halloween",
-            "year": "1978",
-            "category": "carpenter",
-            "watched": true
-        },
-        {
-            "title": "Halloween",
-            "year": "2018",
-            "category": "carpenter",
-            "watched": true
-        },
-        {
-            "title": "The Fog",
-            "year": "1980",
-            "category": "carpenter",
-            "watched": true
-        },
-        {
-            "title": "Escape From New York",
-            "year": "1981",
-            "category": "carpenter",
-            "watched": true
-        },
-        {
-            "title": "They Live",
-            "year": "1988",
-            "category": "carpenter",
-            "watched": true
-        },
-        {
-            "title": "Fargo",
-            "year": "1996",
-            "category": "cult",
-            "watched": true
-        },
-        {
-            "title": "Hedwig and the Angry Inch",
-            "year": "2001",
-            "category": "cult",
-            "watched": true
-        },
-        {
-            "title": "Short Cuts",
-            "year": "1993",
-            "category": "cult",
-            "watched": true
-        },
-        {
-            "title": "The Grifters",
-            "year": "1990",
-            "category": "cult",
-            "watched": true
-        },
-        {
-            "title": "The Usual Suspects",
-            "year": "1995",
-            "category": "cult",
-            "watched": true
-        },
-        {
-            "title": "Carnage",
-            "year": "2011",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Hunt for the Wilderpeople",
-            "year": "2016",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Kinky Boots",
-            "year": "2005",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "La La Land",
-            "year": "2016",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Manhattan Murder Mystery",
-            "year": "1993",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Secrets %26 Lies",
-            "year": "1996",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "The Darjeeling Limited",
-            "year": "2007",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "The Founder",
-            "year": "2016",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "The Little Death",
-            "year": "2014",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "The Social Network",
-            "year": "2010",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "The Wolf of Wall Street",
-            "year": "2013",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Three Billboards Outside Ebbing Missouri",
-            "year": "2017",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Vice",
-            "year": "2018",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Bad Times at The El Royale",
-            "year": "2018",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "BlacKKKlansman",
-            "year": "2018",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "Can You Ever Forgive Me",
-            "year": "2018",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "I, Tonya",
-            "year": "2017",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "Jojo Rabbit",
-            "year": "2019",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "Ocean's 8",
-            "year": "2018",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "Once Upon A Time... In Hollywood",
-            "year": "2019",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "Shazam!",
-            "year": "2019",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "The Favourite",
-            "year": "2018",
-            "category": "recent",
-            "watched": true
-        },
-        {
-            "title": "Close Encounters of the Third Kind",
-            "year": "1977",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Cocoon",
-            "year": "1985",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Contact",
-            "year": "1997",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Independence Day",
-            "year": "1996",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Interstellar",
-            "year": "2014",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Mad Max Fury Road",
-            "year": "2015",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Pacific Rim",
-            "year": "2013",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Split",
-            "year": "2016",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "The Chronicles of Riddick",
-            "year": "2004",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "The Martian",
-            "year": "2015",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "The Mist",
-            "year": "2007",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Unbreakable",
-            "year": "2000",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Venom",
-            "year": "2018",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "The Fellowship of the Ring",
-            "year": "2001",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "The Two Towers",
-            "year": "2002",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "The Return of the King",
-            "year": "2003",
-            "category": "sci-fi-supernatural",
-            "watched": true
-        },
-        {
-            "title": "Muriel's Wedding",
-            "year": "1994",
-            "category": "drama",
-            "watched": true
-        },
-        {
-            "title": "Hell or High Water",
-            "year": "2016",
-            "category": "modern-thriller",
-            "watched": false
-        },
-        {
-            "title": "Total Recall",
-            "year": "1990",
-            "category": "sci-fi-supernatural",
-            "watched": false
-        },
-        {
-            "title": "My Dinner With Andre",
-            "year": "1981",
-            "category": "critically-acclaimed",
-            "watched": false
-        },
-        {
-            "title": "The Town",
-            "year": "2010",
-            "category": "modern-thriller",
-            "watched": false
-        },
-    ]
+  "movies": [
+    {
+      "title": "Conspiracy Theory",
+      "year": "1997",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "First Blood",
+      "year": "1982",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "Point Break",
+      "year": "1991",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "Sneakers",
+      "year": "1992",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "Speed",
+      "year": "1994",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "Terminator 2",
+      "year": "1991",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "The Devil's Advocate",
+      "year": "1997",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "The Fugitive",
+      "year": "1993",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "The Terminator",
+      "year": "1984",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "True Lies",
+      "year": "1994",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "The Burbs",
+      "year": "1989",
+      "category": "old-horror",
+      "watched": true
+    },
+    {
+      "title": "The Frighteners",
+      "year": "1996",
+      "category": "old-horror",
+      "watched": true
+    },
+    {
+      "title": "Burn After Reading",
+      "year": "2008",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Identity",
+      "year": "2003",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Inside Man",
+      "year": "2006",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Knives Out",
+      "year": "2019",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Lucky Number Slevin",
+      "year": "2006",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Nightcrawler",
+      "year": "2014",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "No Country for Old Men",
+      "year": "2007",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "The Day After Tomorrow",
+      "year": "2004",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Widows",
+      "year": "2018",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Zodiac",
+      "year": "2007",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Anchorman",
+      "year": "2004",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Booksmart",
+      "year": "2019",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Calendar Girls",
+      "year": "2003",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Chicken Run",
+      "year": "2000",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Coneheads",
+      "year": "1993",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Identity Thief",
+      "year": "2013",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Jumanji",
+      "year": "1995",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Life of the Party",
+      "year": "2018",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Matilda",
+      "year": "1996",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Mrs Doubtfire",
+      "year": "1993",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Murder by Death",
+      "year": "1976",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Romancing the Stone",
+      "year": "1984",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Serial Mom",
+      "year": "1994",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Shaun the Sheep Movie",
+      "year": "2015",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Sightseers",
+      "year": "2012",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Spy",
+      "year": "2015",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Tammy",
+      "year": "2014",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "The Boss",
+      "year": "2016",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "The Happytime Murders",
+      "year": "2018",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "The Heat",
+      "year": "2013",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "The House",
+      "year": "2017",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "The Mask",
+      "year": "1994",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "The Princess Diaries",
+      "year": "2001",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "The Spy Who Dumped Me",
+      "year": "2018",
+      "category": "comedies",
+      "watched": true
+    },
+    {
+      "title": "Amadeus",
+      "year": "1984",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "Dr Strangelove",
+      "year": "1964",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "Jaws",
+      "year": "1975",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "Jerry Maguire",
+      "year": "1996",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "The Discreet Charm of the Bourgeoisie",
+      "year": "1972",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "The Pink Panther",
+      "year": "1963",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "Christine",
+      "year": "1983",
+      "category": "carpenter",
+      "watched": true
+    },
+    {
+      "title": "Escape From New York",
+      "year": "1981",
+      "category": "carpenter",
+      "watched": true
+    },
+    {
+      "title": "Halloween",
+      "year": "1978",
+      "category": "carpenter",
+      "watched": true
+    },
+    {
+      "title": "Halloween",
+      "year": "2018",
+      "category": "carpenter",
+      "watched": true
+    },
+    {
+      "title": "The Fog",
+      "year": "1980",
+      "category": "carpenter",
+      "watched": true
+    },
+    {
+      "title": "Escape From New York",
+      "year": "1981",
+      "category": "carpenter",
+      "watched": true
+    },
+    {
+      "title": "They Live",
+      "year": "1988",
+      "category": "carpenter",
+      "watched": true
+    },
+    {
+      "title": "Fargo",
+      "year": "1996",
+      "category": "cult",
+      "watched": true
+    },
+    {
+      "title": "Hedwig and the Angry Inch",
+      "year": "2001",
+      "category": "cult",
+      "watched": true
+    },
+    {
+      "title": "Short Cuts",
+      "year": "1993",
+      "category": "cult",
+      "watched": true
+    },
+    {
+      "title": "The Grifters",
+      "year": "1990",
+      "category": "cult",
+      "watched": true
+    },
+    {
+      "title": "The Usual Suspects",
+      "year": "1995",
+      "category": "cult",
+      "watched": true
+    },
+    {
+      "title": "Carnage",
+      "year": "2011",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Hunt for the Wilderpeople",
+      "year": "2016",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Kinky Boots",
+      "year": "2005",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "La La Land",
+      "year": "2016",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Manhattan Murder Mystery",
+      "year": "1993",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Secrets %26 Lies",
+      "year": "1996",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "The Darjeeling Limited",
+      "year": "2007",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "The Founder",
+      "year": "2016",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "The Little Death",
+      "year": "2014",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "The Social Network",
+      "year": "2010",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "The Wolf of Wall Street",
+      "year": "2013",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Three Billboards Outside Ebbing Missouri",
+      "year": "2017",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Vice",
+      "year": "2018",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Bad Times at The El Royale",
+      "year": "2018",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "BlacKKKlansman",
+      "year": "2018",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "Can You Ever Forgive Me",
+      "year": "2018",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "I, Tonya",
+      "year": "2017",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "Jojo Rabbit",
+      "year": "2019",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "Ocean's 8",
+      "year": "2018",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "Once Upon A Time... In Hollywood",
+      "year": "2019",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "Shazam!",
+      "year": "2019",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "The Favourite",
+      "year": "2018",
+      "category": "recent",
+      "watched": true
+    },
+    {
+      "title": "Close Encounters of the Third Kind",
+      "year": "1977",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Cocoon",
+      "year": "1985",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Contact",
+      "year": "1997",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Independence Day",
+      "year": "1996",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Interstellar",
+      "year": "2014",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Mad Max Fury Road",
+      "year": "2015",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Pacific Rim",
+      "year": "2013",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Split",
+      "year": "2016",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "The Chronicles of Riddick",
+      "year": "2004",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "The Martian",
+      "year": "2015",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "The Mist",
+      "year": "2007",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Unbreakable",
+      "year": "2000",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Venom",
+      "year": "2018",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "The Fellowship of the Ring",
+      "year": "2001",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "The Two Towers",
+      "year": "2002",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "The Return of the King",
+      "year": "2003",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "Muriel's Wedding",
+      "year": "1994",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Hell or High Water",
+      "year": "2016",
+      "category": "modern-thriller",
+      "watched": true
+    },
+    {
+      "title": "Total Recall",
+      "year": "1990",
+      "category": "sci-fi-supernatural",
+      "watched": true
+    },
+    {
+      "title": "My Dinner With Andre",
+      "year": "1981",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "The Town",
+      "year": "2010",
+      "category": "modern-thriller",
+      "watched": false
+    },
+    {
+      "title": "Cop Land",
+      "year": "1997",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "Witness",
+      "year": "1985",
+      "category": "old-thriller",
+      "watched": true
+    },
+    {
+      "title": "Intolerable Cruelty",
+      "year": "2003",
+      "category": "drama",
+      "watched": true
+    },
+    {
+      "title": "Death on the Nile",
+      "year": "1978",
+      "category": "critically-acclaimed",
+      "watched": false
+    },
+    {
+      "title": "Murder on the Orient Express",
+      "year": "1974",
+      "category": "critically-acclaimed",
+      "watched": true
+    }
+  ]
 }
