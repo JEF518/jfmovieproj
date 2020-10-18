@@ -12,11 +12,10 @@ const watchedRoutes = (app, fs) => {
       let key = "__express__" + req.originalUrl || req.url;
       let cachedBody = mcache.get(key);
       if (cachedBody) {
-        console.log("USING THE CACHED BODY BIT WHOOP WHOOP");
+        console.log("using cache");
         res.send(cachedBody);
         return;
       } else {
-        console.log("HMMM DOING THAT BIT WITH SEND RESPONSE NOW...");
         res.sendResponse = res.send;
         res.send = (body) => {
           mcache.put(key, body, duration * 1000);
@@ -61,7 +60,6 @@ const watchedRoutes = (app, fs) => {
       var films = JSON.parse(data);
       for (let i = 0; i < films.movies.length; i++) {
         if (films.movies[i].category == requestedGenre) {
-          console.log(films.movies[i]);
           oneGenreFilms.push(films.movies[i]);
         }
       }
@@ -94,7 +92,6 @@ const watchedRoutes = (app, fs) => {
               films.movies[i].year
           )
           .then((response) => {
-            console.log("GETTING SOME SWEET SWEET DATA");
             responseData.push(response.data);
           })
           .catch((error) => {
@@ -112,7 +109,6 @@ const watchedRoutes = (app, fs) => {
 function getAPIData(genre, basicFilmList, res) {
   var responseData = [];
   for (let i = 0; i < basicFilmList.movies.length; i++) {
-    console.log(basicFilmList.movies[i].title);
     axios
       .get(
         "http://www.omdbapi.com/?apikey=" +
@@ -123,16 +119,6 @@ function getAPIData(genre, basicFilmList, res) {
           basicFilmList.movies[i].year
       )
       .then((response) => {
-        console.log(
-          "http://www.omdbapi.com/?apikey=" +
-            process.env.MOVIE_DATA_KEY +
-            "&t=" +
-            encodeURI(basicFilmList.movies[i].title) +
-            "&y=" +
-            basicFilmList.movies[i].year
-        );
-        console.log("GETTING SOME SWEET SWEET DATA");
-        console.log(response.data);
         responseData.push(response.data);
       })
       .catch((error) => {
@@ -145,7 +131,6 @@ function getAPIData(genre, basicFilmList, res) {
 }
 
 function renderThis(view, responseData, res) {
-  //  console.log('responseData:', responseData);
   res.render(view, { data: responseData, watched: true });
 }
 
