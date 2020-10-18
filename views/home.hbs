@@ -16,17 +16,7 @@
 </head>
 
 <body>
-
-    <div class="watched-toggle">
-        <label class="switch">
-            <input type="checkbox" onclick="myFunction()">
-            <span class="slider round"></span>
-        </label>
-    </div>
     <container id="home-container">
-        <div class="menu-button">
-            <a href="/films"><img src='/home.png' style="width: 80%" /></a>
-        </div>
         <a class="menu-item home-div" id="genre-item" href="/genres">
             <h1>Genres</h1>
         </a>
@@ -38,6 +28,13 @@
             <img id="random" class="normal" width="20%" style="align-self: center; max-width: 20%"
                 src="/images/random.svg" />
         </a>
+            <div class="watched-toggle">
+        <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider round"></span>
+        </label>
+        <div id="watched-toggle-label">unwatched</div>
+    </div>
     </container>
     <script src="js/scripts.js"></script>
     <script>
@@ -47,15 +44,20 @@
             elements[1].classList.toggle("dark-mode");
             var randomImage = document.getElementById('random');
             if (randomImage.classList.contains("normal")) {
+                document.getElementById("watched-toggle-label").innerHTML = "watched";
+                document.getElementById("genre-item").setAttribute("href", "/watched/genres");
+                document.getElementById("allfilms-item").setAttribute("href", "/watched/films");
+                document.getElementById("randomise-link").setAttribute("href", "/watched/randomise");
                 randomImage.classList.remove("normal");
                 randomImage.src = "/images/random-white.svg";
             } else {
+                document.getElementById("watched-toggle-label").innerHTML = "unwatched";
+                document.getElementById("genre-item").setAttribute("href", "/genres");
+                document.getElementById("allfilms-item").setAttribute("href", "/films");
+                document.getElementById("randomise-link").setAttribute("href", "/randomise");
                 randomImage.classList.add("normal");
                 randomImage.src = "/images/random.svg";
             }
-            document.getElementById("genre-item").setAttribute("href", "/watched/genres");
-            document.getElementById("allfilms-item").setAttribute("href", "/watched/films");
-            document.getElementById("randomise-link").setAttribute("href", "/watched/randomise");
         }
     </script>
 </body>

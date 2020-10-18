@@ -24,8 +24,13 @@
             <a href="/"><img src='/home.png' style="width: 80%" /></a>
         </div><br>
         <div class="menu-button">
+            {{#if watched}}
+            <a href="/watched/genres"><img src='/menu.png' style="padding-top: 50px; width: 80%" /></a>
+            {{else}}
             <a href="/genres"><img src='/menu.png' style="padding-top: 50px; width: 80%" /></a>
+            {{/if}}
         </div>
+        {{#if watched}}<h1 class="watched-title">WATCHED</h1>{{/if}}
         <h1>{{{loud genre}}}</h1>
         {{#each data}}
         <a class="movie-div" href="/film/title/{{this.Title}}/year/{{this.Year}}" />
