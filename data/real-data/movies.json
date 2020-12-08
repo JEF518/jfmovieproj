@@ -805,6 +805,48 @@
       "watched": false
     },
     {
+      "title": "Silkwood",
+      "year": "1983",
+      "category": "drama",
+      "watched": false
+    },
+    {
+      "title": "The Ice Storm",
+      "year": "1997",
+      "category": "drama",
+      "watched": false
+    },
+    {
+      "title": "The Net",
+      "year": "1995",
+      "category": "old-thriller",
+      "watched": false
+    },
+    {
+      "title": "Drop Dead Gorgeous",
+      "year": "1999",
+      "category": "comedies",
+      "watched": false
+    },
+    {
+      "title": "A Mighty Wind",
+      "year": "2003",
+      "category": "comedies",
+      "watched": false
+    },
+    {
+      "title": "Freaky",
+      "year": "2020",
+      "category": "recent",
+      "watched": false
+    },
+    {
+      "title": "Quiz Show",
+      "year": "1994",
+      "category": "cult",
+      "watched": false
+    },
+    {
       "title": "The Hidden",
       "year": "1987",
       "category": "sci-fi-supernatural",
