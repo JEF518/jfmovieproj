@@ -13,6 +13,18 @@
       "watched": false
     },
     {
+      "title": "Zero Effect",
+      "year": "1998",
+      "category": "old-thriller",
+      "watched": false
+    },
+    {
+      "title": "Bringing Out The Dead",
+      "year": "1999",
+      "category": "old-thriller",
+      "watched": false
+    },
+    {
       "title": "Into The Night",
       "year": "1985",
       "category": "old-thriller",
@@ -129,6 +141,12 @@
     {
       "title": "The Love Witch",
       "year": "2016",
+      "category": "comedies",
+      "watched": false
+    },
+    {
+      "title": "Prizzi's Honor",
+      "year": "1985",
       "category": "comedies",
       "watched": false
     },
@@ -367,6 +385,12 @@
       "watched": false
     },
     {
+      "title": "Love Streams",
+      "year": "1984",
+      "category": "drama",
+      "watched": false
+    },
+    {
       "title": "The Fisher King",
       "year": "1991",
       "category": "drama",
@@ -411,6 +435,12 @@
     {
       "title": "Exotica",
       "year": "1994",
+      "category": "cult",
+      "watched": false
+    },
+    {
+      "title": "Opening Night",
+      "year": "1997",
       "category": "cult",
       "watched": false
     },
