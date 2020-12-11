@@ -45,8 +45,8 @@
         </div> Awards: {{this.Awards}} <br>
         </a>
         <div class="crud-menu">
-            <a href="/delete-film-screen/title/{{this.title}}/year/{{this.year}}">Delete</a>
-            <a href="/edit-film-screen/title/{{this.title}}/year/{{this.year}}">Edit</a>
+            <a onclick="return confirm('Are you sure?')" href="/delete-film/title/{{this.Title}}/year/{{this.Year}}">Delete</a>
+            <a href="/edit-film-screen/title/{{this.Title}}/year/{{this.Year}}{{#if @root.watched}}?watched=true{{/if}}">Edit</a>
         </div>
         {{/each}}
     </container>

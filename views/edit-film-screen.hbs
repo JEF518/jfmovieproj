@@ -1,1 +1,69 @@
-{{jsonData .}}
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Edit {{data.movie.title}}</title>
+    <meta name="description" content="Movie Site">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    <style>
+
+    </style>
+
+</head>
+
+<body onload="chooseSelectedGenre()">
+    <container>
+<div id="current-genre" style="display:none">{{data.movie.category}}</div>
+<form action="/edit-film/title/{{data.movie.title}}">
+
+<label>{{data.movie.title}}</label><br>
+<label>{{data.movie.year}}</label><br>
+<label for="genre">Genre:</label>
+<select id="genre" name="genre">
+    <option id="comedies-option" value="comedies">comedies</option>
+    <option id="old-thriller-option" value="old-thriller">old-thriller</option>
+    <option id="modern-thriller-option" value="modern-thriller">modern-thriller</option>
+    <option id="critically-acclaimed-option" value="critically-acclaimed">critically-acclaimed</option>
+    <option id="carpenter-option" value="carpenter">carpenter</option>
+    <option id="old-horror-option" value="old-horror">old-horror</option>
+    <option id="drama-option" value="drama">drama</option>
+    <option id="cult-option" value="cult">cult</option>
+    <option id="historical-option" value="historical">historical</option>
+    <option id="sci-fi-supernatural-option" value="sci-fi-supernatural">sci-fi-supernatural</option>
+    <option id="recent-option" value="recent">recent</option>
+    <option id="documentaries-option" value="documentaries">documentaries</option>
+    <option id="christmas-option" value="christmas">christmas</option>
+</select>
+<label for="watched">Watched:</label>
+<input type="checkbox" id="watched" name="watched" 
+    {{#if data.movie.watched}}
+    checked
+    {{/if}}
+><br>
+<input class="submit-button" style="margin-top: 10%" type="submit" value="Submit Edits">
+</form>
+<form action="/delete-film/title/{{data.movie.title}}/year/{{data.movie.year}}">
+<input class="submit-button" style="background:darkred" type="submit" value="Delete Film">
+</form>
+
+</container>
+<script>
+   function chooseSelectedGenre(){
+        const currentGenre = document.getElementById("current-genre").innerHTML;
+        console.log(currentGenre);
+        return document.getElementById(currentGenre +'-option').setAttribute("selected", "selected")
+    }
+    window.onload = chooseSelectedGenre()
+</script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
