@@ -313,12 +313,6 @@
       "watched": false
     },
     {
-      "title": "Doubt",
-      "year": "2008",
-      "category": "drama",
-      "watched": false
-    },
-    {
       "title": "Far From Heaven",
       "year": "2002",
       "category": "drama",
@@ -886,6 +880,30 @@
       "title": "The Hidden",
       "year": "1987",
       "category": "sci-fi-supernatural",
+      "watched": false
+    },
+    {
+      "title": "The Hot Spot",
+      "year": "1990",
+      "category": "old-thriller",
+      "watched": false
+    },
+    {
+      "title": "The Last Seduction",
+      "year": "1994",
+      "category": "old-thriller",
+      "watched": false
+    },
+    {
+      "title": "Payback",
+      "year": "1999",
+      "category": "old-thriller",
+      "watched": false
+    },
+    {
+      "title": "Swingers",
+      "year": "1996",
+      "category": "comedies",
       "watched": false
     }
   ]
