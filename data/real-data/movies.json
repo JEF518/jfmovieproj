@@ -823,12 +823,6 @@
       "watched": false
     },
     {
-      "title": "The Abyss",
-      "year": "1989",
-      "category": "sci-fi-supernatural",
-      "watched": false
-    },
-    {
       "title": "The Savages",
       "year": "2007",
       "category": "drama",
@@ -904,6 +898,24 @@
       "title": "Swingers",
       "year": "1996",
       "category": "comedies",
+      "watched": false
+    },
+    {
+      "title": "About Schmidt",
+      "year": "2002",
+      "category": "drama",
+      "watched": false
+    },
+    {
+      "title": "The Mirror Crack'd",
+      "year": "1980",
+      "category": "critically-acclaimed",
+      "watched": false
+    },
+    {
+      "title": "Halloween II",
+      "year": "1981",
+      "category": "old-horror",
       "watched": false
     }
   ]

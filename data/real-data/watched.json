@@ -677,6 +677,18 @@
       "year": "2008",
       "category": "drama",
       "watched": true
+    },
+    {
+      "title": "Citizen Ruth",
+      "year": "1996",
+      "category": "cult",
+      "watched": false
+    },
+    {
+      "title": "Weekend at Bernie's",
+      "year": "1989",
+      "category": "comedies",
+      "watched": true
     }
   ]
 }
