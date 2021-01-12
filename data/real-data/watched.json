@@ -689,6 +689,24 @@
       "year": "1989",
       "category": "comedies",
       "watched": true
+    },
+    {
+      "title": "The Mirror Crack'd",
+      "year": "1980",
+      "category": "critically-acclaimed",
+      "watched": true
+    },
+    {
+      "title": "Safe",
+      "year": "1995",
+      "category": "cult",
+      "watched": true
+    },
+    {
+      "title": "Night on Earth",
+      "year": "1991",
+      "category": "cult",
+      "watched": true
     }
   ]
 }
