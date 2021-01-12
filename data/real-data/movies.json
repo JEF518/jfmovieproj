@@ -917,6 +917,30 @@
       "year": "1981",
       "category": "old-horror",
       "watched": false
+    },
+    {
+      "title": "Nomadland",
+      "year": "2020",
+      "category": "recent",
+      "watched": false
+    },
+    {
+      "title": "The War of the Roses",
+      "year": "1989",
+      "category": "comedies",
+      "watched": false
+    },
+    {
+      "title": "Nashville",
+      "year": "1975",
+      "category": "cult",
+      "watched": false
+    },
+    {
+      "title": "Foul Play",
+      "year": "1978",
+      "category": "comedies",
+      "watched": false
     }
   ]
 }
