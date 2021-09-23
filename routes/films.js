@@ -6,6 +6,20 @@ const dvdPath = "./data/real-data/dvds.json";
 require("dotenv").config();
 var accents = require("remove-accents");
 
+const genreMap = {
+  "old-horror": "Camp Old Horror",
+  "comedies": "Comedies",
+  "old-thriller": "80s & 90s Crime & Action & Thrillers",
+  "criticall-acclaimed": "Classic & Criticall Acclaimed",
+  "cult": "Cult Films",
+  "carpenter": "Carpenter",
+  "drama": "Dramas",
+  "historical": "Historical",
+  "modern-thriller": "Modern Crime & Thrillers",
+  "recent": "Recent Films- 2017-2020",
+  "sci-fi-supernatural": "SciFi & Supernatural"
+};
+
 const filmRoutes = (app, fs) => {
   // variables
   var cache = (duration) => {
@@ -105,9 +119,43 @@ const filmRoutes = (app, fs) => {
       );
     }, 500);
   });
-
+//   app.get("/stream/title/:title", (req, res) => {
+// console.log("argh");
+//   });
+  app.get("/stream/title/:title/year/:year/genre/:genre", (req, res) => {
+    console.log("here");
+    console.log(genreMap[req.params.genre]);
+    const path = process.env.FILM_FOLDER_BASE_PATH + genreMap[req.params.genre] + "/" + req.params.title + ' ' + req.params.year + '/' + req.params.title + ' (' + req.params.year + ').mp4';
+    const stat = fs.statSync(path)
+    const fileSize = stat.size
+    const range = req.headers.range
+    if (range) {
+      const parts = range.replace(/bytes=/, "").split("-")
+      const start = parseInt(parts[0], 10)
+      const end = parts[1] 
+        ? parseInt(parts[1], 10)
+        : fileSize-1
+      const chunksize = (end-start)+1
+      const file = fs.createReadStream(path, {start, end})
+      const head = {
+        'Content-Range': `bytes ${start}-${end}/${fileSize}`,
+        'Accept-Ranges': 'bytes',
+        'Content-Length': chunksize,
+        'Content-Type': 'video/mp4',
+      }
+      res.writeHead(206, head);
+      file.pipe(res);
+    } else {
+      const head = {
+        'Content-Length': fileSize,
+        'Content-Type': 'video/mp4',
+      }
+      res.writeHead(200, head)
+      fs.createReadStream(path).pipe(res)
+    }
+  });
   // READ SINGLE FILM
-  app.get("/film/title/:title/year/:year/:plot?", cache(10000), (req, res) => {
+  app.get("/film/title/:title/year/:year/genre/:genre/:plot?", cache(10000), (req, res) => {
     if (req.params.year != null) {
       var queryString =
         accents.remove(req.params.title.split("&").join("%20%26%20")) +
@@ -129,6 +177,7 @@ const filmRoutes = (app, fs) => {
       )
       .then((response) => {
         let filmData = response.data;
+        filmData["original-genre"] = req.params.genre;
         const googleReq =
           "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" +
           req.params.title.split("&").join("%20%26%20") +
@@ -255,6 +304,7 @@ function getAPIData(genre, basicFilmList, res) {
           basicFilmList.movies[i].year
       )
       .then((response) => {
+        response.data["original-genre"] = genre;
         responseData.push(response.data);
       })
       .catch((error) => {

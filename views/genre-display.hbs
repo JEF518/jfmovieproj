@@ -33,7 +33,7 @@
         {{#if watched}}<h1 class="watched-title">WATCHED</h1>{{/if}}
         <h1>{{{loud genre}}}</h1>
         {{#each data}}
-        <a class="movie-div" href="/film/title/{{this.Title}}/year/{{this.Year}}" />
+        <a class="movie-div" href="/film/title/{{this.Title}}/year/{{this.Year}}/genre/{{this.original-genre}}" />
         <div class="movie-title">
             <h2>{{this.Title}}</h2>
         </div> <br>
