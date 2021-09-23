@@ -125,7 +125,7 @@ const filmRoutes = (app, fs) => {
   app.get("/stream/title/:title/year/:year/genre/:genre", (req, res) => {
     console.log("here");
     console.log(genreMap[req.params.genre]);
-    const path = process.env.FILM_FOLDER_BASE_PATH + genreMap[req.params.genre] + "/" + req.params.title + ' ' + req.params.year + '/' + req.params.title + ' (' + req.params.year + ').mp4';
+    const path = process.env.FILM_FOLDER_BASE_PATH + genreMap[req.params.genre] + "/" + req.params.title + ' ' + ' (' + req.params.year + ')' + '/' + req.params.title + ' (' + req.params.year + ').mp4';
     const stat = fs.statSync(path)
     const fileSize = stat.size
     const range = req.headers.range
